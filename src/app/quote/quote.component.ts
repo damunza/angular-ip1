@@ -7,15 +7,17 @@ import{Quote}from'../quote'
   styleUrls: ['./quote.component.css']
 })
 export class QuoteComponent implements OnInit {
-     quotes=[]
+     quotes=[
+       new Quote(1,'haba na haba hujaza kibaba','wahenga','Daniel'),
+     ]
     // Quote=[
     //   new Quote(1,'haba na haba hujaza kibaba','wahenga','Daniel'),
     // ]
 public quote: Quote = new Quote(0, '', '','')
     addNewQuote(quote: Quote){
-      this.quote = quote;
-      // let quoteLength=this.quotes.length;
-      // quote.id=quoteLength+1;
+      // this.quote = quote;
+      const quoteLength=this.quotes.length;
+      quote.id=quoteLength+1;
       this.quotes.push(quote)
   }
   constructor() { }

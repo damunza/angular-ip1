@@ -4,10 +4,11 @@
 <div class="">
   <app-quote-form (addQuote)='addNewQuote($event)'></app-quote-form>
 </div>
-
 </div>
+{{newQuote}}
 
 
 <ul>
-  <li>{{quote.quote}}</li>
+  <li *ngFor="let quote of quotes">{{quote.quote}}</li>
+  <app-quote-details></app-quote-details>
 </ul>

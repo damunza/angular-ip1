@@ -1,9 +1,9 @@
 <div class='container-fluid'>
-<form  (ngSubmit)='submitQuote()' #goalForm='ngForm'>
+<form (ngSubmit)='submitQuote()' #goalForm='ngForm'>
 
   <div class="form-group">
     <label for="quote">Quote</label><br>
-    <textarea class="form-control" rows="8" id="quote" [(ngModel)]='newQuote.quote' name="quote" #description="ngModel" required ></textarea>
+    <textarea class="form-control" rows="8" id="quote" [(ngModel)]='newQuote.quote' name="quote" #quote="ngModel" required ></textarea>
 
     <!-- <div [hidden]="quote.valid || quote.pristine" class="alert alert-danger">
       <p>Enter Quote</p>
@@ -13,7 +13,7 @@
 
   <div class="form-group">
     <label for="author">Author of Quote</label>
-    <input type="text" class="form-control" [(ngModel)]='newQuote.author' name='author' #description='ngModel' required>
+    <input type="text" class="form-control" [(ngModel)]='newQuote.author' name='author' #author='ngModel' required>
 
     <!-- <div [hidden]="author.valid || author.pristine" class="alert alert-danger">
       <p>Enter Unknown if unknown</p>
@@ -23,7 +23,7 @@
 
   <div class="form-group">
     <label for="submitter">Submitted by</label>
-    <input type="text" class="form-control" [(ngModel)]='newQuote.submitter' name="submitter" #description='ngModel' required>
+    <input type="text" class="form-control" [(ngModel)]='newQuote.submitter' name="submitter" #submitter='ngModel' required>
 
     <!-- <div [hidden]="submitter.valid || submitter.pristine" class="alert alert-danger">
       <p>Enter Name</p>
@@ -31,7 +31,8 @@
 
   </div>
 
-  <button type="submit" class="btn btn-success btn-lg" on-click="publishQuote()">Add Quote</button>
+  <button type="Submit" on-click="publishQuote()" class="btn btn-success btn-lg" >Add Quote</button>
+  <button class="btn btn-success btn-lg" >Submit Quote</button>
 
 
 </form>
