@@ -9,6 +9,14 @@
 
 
 <ul>
-  <li *ngFor="let quote of quotes">{{quote.quote}}</li>
-  <app-quote-details></app-quote-details>
+
+<div *ngFor='let quote of quotes ; let i= index'>
+
+  <li>{{quote.quote}}</li>
+
+  <button (click)='toogleDetails(i)'>show details</button>
+
+  <app-quote-details *ngIf='quote.showAuthor' [quote]='quote'></app-quote-details>
+
+</div>
 </ul>

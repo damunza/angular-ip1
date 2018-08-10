@@ -13,6 +13,11 @@ export class QuoteComponent implements OnInit {
     // Quote=[
     //   new Quote(1,'haba na haba hujaza kibaba','wahenga','Daniel'),
     // ]
+
+    toogleDetails(index){
+      this.quotes[index].showAuthor = !this.quotes[index].showAuthor
+    }
+
 public quote: Quote = new Quote(0, '', '','')
     addNewQuote(quote: Quote){
       // this.quote = quote;
