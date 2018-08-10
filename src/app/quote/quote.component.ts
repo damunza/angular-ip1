@@ -7,9 +7,9 @@ import{Quote}from'../quote'
   styleUrls: ['./quote.component.css']
 })
 export class QuoteComponent implements OnInit {
-    Quote=[
-      new Quote(1,'haba na haba hujaza kibaba','wahenga','Daniel'),
-    ]
+    // Quote=[
+    //   new Quote(1,'haba na haba hujaza kibaba','wahenga','Daniel'),
+    // ]
   constructor() { }
 
   ngOnInit() {

@@ -4,18 +4,18 @@
   <div class="form-group">
     <label for="quote">Quote</label><br>
     <textarea class="form-control" rows="8" id="quote" [(ngModel)]='newQuote.quote' name="quote" #description="ngModel" required ></textarea>
- Display{{newQuote.quote}}
+
   </div>
 
   <div class="form-group">
     <label for="author">Author of Quote</label>
-    <input type="text" class="form-control" required>
+    <input type="text" class="form-control" [(ngModel)]='newQuote.author' name='author' #description='ngModel' required>
 
   </div>
 
   <div class="form-group">
     <label for="submitter">Submitted by</label>
-    <input type="text" class="form-control" required>
+    <input type="text" class="form-control" [(ngModel)]='newQuote.submitter' name="submitter" #description='ngModel' required>
 
   </div>
 
