@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import{Quote}from'../quote'
 
 @Component({
@@ -7,9 +7,17 @@ import{Quote}from'../quote'
   styleUrls: ['./quote.component.css']
 })
 export class QuoteComponent implements OnInit {
+     quotes=[]
     // Quote=[
     //   new Quote(1,'haba na haba hujaza kibaba','wahenga','Daniel'),
     // ]
+public quote: Quote = new Quote(0, '', '','')
+    addNewQuote(quote: Quote){
+      this.quote = quote;
+      // let quoteLength=this.quotes.length;
+      // quote.id=quoteLength+1;
+      this.quotes.push(quote)
+  }
   constructor() { }
 
   ngOnInit() {
