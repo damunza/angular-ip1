@@ -18,7 +18,7 @@ export class QuoteComponent implements OnInit {
       this.quotes[index].showAuthor = !this.quotes[index].showAuthor
     }
 
-public quote: Quote = new Quote(0, '', '','',new Date())
+public quote: Quote = new Quote(0, '', '','',new Date(),'','')
     addNewQuote(quote: Quote){
       // this.quote = quote;
       const quoteLength=this.quotes.length;
