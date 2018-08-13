@@ -8,7 +8,7 @@ import{Quote}from'../quote'
 })
 export class QuoteComponent implements OnInit {
      quotes=[
-       new Quote(1,'haba na haba hujaza kibaba','wahenga','Daniel',new Date(2018,7,10)),
+       // new Quote(1,'haba na haba hujaza kibaba','wahenga','Daniel',new Date(2018,7,10)),
      ]
     // Quote=[
     //   new Quote(1,'haba na haba hujaza kibaba','wahenga','Daniel'),
@@ -18,7 +18,7 @@ export class QuoteComponent implements OnInit {
       this.quotes[index].showAuthor = !this.quotes[index].showAuthor
     }
 
-public quote: Quote = new Quote(0, '', '','',new Date(),'','')
+public quote: Quote = new Quote(0, '', '','',new Date(),0,0)
     addNewQuote(quote: Quote){
       // this.quote = quote;
       const quoteLength=this.quotes.length;
