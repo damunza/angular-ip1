@@ -2,26 +2,39 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.1.2.
 
-## Development server
+## Description
+This is a web application that  allows the user to enter their desired quote after which the quote can be rated by other users
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+### live link 
 
-## Code scaffolding
+https://damunza.github.io/angular-ip1/
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## SET UP INSTRUCTIONS
+Install angular CLI for running angular apps
+Clone the repository from github https://github.com/damunza/angular-ip1.git
 
-## Build
+## running the application
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+Use the web brouser of your choice,
+Run the following link on the searchbar of your browser https://damunza.github.io/angular-ip1/
 
-## Running unit tests
+## TECHNOLOGIES USED
+ . Angular 6
+ . HTML
+ . Bootstrap
+ 
+ ### KNOWN BUGS
+ The date does not display numbers 
+ On editing the quote all succeeding quotes and the current quote are changed 
+ 
+ ## contact information
+ 
+ For more information on the app contact danidamunza@gmail.com
+ All help on how to better this app is also appreciated and can be passed through the same email address
+ 
+ ### LISCENCE
+ Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sub-license, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE. Copyright (c) 2018
