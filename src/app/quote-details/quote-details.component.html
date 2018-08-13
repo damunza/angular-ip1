@@ -2,9 +2,9 @@
 <p>Quote submitted by {{quote.submitter}} </p>
 <p>submitted {{quote.submitTime|timeCount}} hours ago</p>
 <p>
-  <button class="btn btn-sm btn-success" on-click='addUpVotes()'>like</button>{{quote.upvotes}}
+  <button class="btn btn-sm btn-success" on-click='addUpVotes()'>like{{quote.upvote}}</button>
 </p>
 
 <p>
-  <button class="btn btn-sm btn-danger" (click)='addDownVotes()'>downvote</button>{{quote.downvotes}}
+  <button class="btn btn-sm btn-danger" (click)='addDownVotes()'>dislike{{quote.downvote}}</button>
 </p>
